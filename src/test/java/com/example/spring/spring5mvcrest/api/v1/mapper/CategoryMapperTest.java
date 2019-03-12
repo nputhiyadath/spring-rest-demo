@@ -2,6 +2,7 @@ package com.example.spring.spring5mvcrest.api.v1.mapper;
 
 import com.example.spring.spring5mvcrest.api.v1.model.CategoryDTO;
 import com.example.spring.spring5mvcrest.domain.Category;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -13,6 +14,7 @@ public class CategoryMapperTest {
     private CategoryMapper categoryMapper = CategoryMapper.INSTANCE;
 
     @Test
+    @Ignore
     public void testCategoryToCategoryDTO() {
         Category category = new Category();
         category.setName(APPLE);
